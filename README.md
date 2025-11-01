@@ -28,27 +28,19 @@ This app lets you analyze CSV data using AI models running entirely in your brow
 
 ```bash
 # install deps
-npm install
+yarn install
 
 # start dev server (http://localhost:5173)
-npm run dev
+yarn dev
 ```
 
 Note: Dev server includes headers for Cross-Origin Isolation to support WebLLM.
-
-## Build
-
-```bash
-npm run build
-# optionally preview the production build
-npm run preview
-```
 
 ## Deploy to Netlify
 
 1. Push this repo to GitHub
 2. In Netlify, create a new site from Git and select this repo
-3. Build Command: `npm run build`
+3. Build Command: `yarn build`
 4. Publish Directory: `dist`
 
 Headers in `netlify.toml` enable cross-origin isolation for WebLLM.
